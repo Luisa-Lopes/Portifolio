@@ -1,7 +1,11 @@
 .site-shell {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(45, 212, 191, 0.18), transparent 32rem),
+    radial-gradient(
+      circle at top left,
+      rgba(45, 212, 191, 0.18),
+      transparent 32rem
+    ),
     linear-gradient(180deg, #f8fbfb 0%, #eef5f4 46%, #ffffff 100%);
 }
 
@@ -34,7 +38,7 @@
   margin-right: 10px;
   border-radius: 4px;
   background: #0f766e;
-  content: '';
+  content: "";
 }
 
 .topbar nav {
@@ -107,7 +111,7 @@ main {
 .eyebrow {
   margin: 0;
   color: #0f766e;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
