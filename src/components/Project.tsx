@@ -1,5 +1,19 @@
 import ProjectCard from "./ProjectCard";
 
+const prototipoAutoescola = new URL("../assets/prototipo.png", import.meta.url)
+  .href;
+
+const topologiaRedes = new URL("../assets/topologiaPnet.png", import.meta.url)
+  .href;
+
+export type ProjectMedia = {
+  type: "image" | "video";
+  src: string;
+  alt: string;
+  poster?: string;
+  caption?: string;
+};
+
 export type Project = {
   name: string;
   area: string;
@@ -9,6 +23,7 @@ export type Project = {
   techs: string[];
   demo: string;
   github: string;
+  media?: ProjectMedia;
 };
 
 const projects: Project[] = [
@@ -16,10 +31,10 @@ const projects: Project[] = [
     name: "App da Prótese Bluetooth",
     area: "Front-End",
     description:
-      "Aplicativo para integração de prótese bluetooth com dois games para que os usuários(as) de prótese de braço possam fortalecer a musculatura e  restaurar a independência.",
-    challenge: "Traduzir as necessidades do usuário para um game.",
+      "Aplicativo para integração de prótese Bluetooth com dois jogos, para que usuários de prótese de braço possam fortalecer a musculatura e restaurar a independência.",
+    challenge: "Traduzir as necessidades do usuário para um jogo.",
     built:
-      "Desenvolvi telas para o fortalecimente da musculatura dos usuário com prótese e construção da física, colisões, pontuações, interfaces de menu e configurações dos dois games.",
+      "Desenvolvi telas para o fortalecimento da musculatura dos usuários com prótese e construí a física, colisões, pontuações, interfaces de menu e configurações dos dois jogos.",
     techs: ["React Native", "TypeScript", "CSS", "Bootstrap"],
     demo: "#",
     github: "#",
@@ -27,12 +42,21 @@ const projects: Project[] = [
   {
     name: "Consultoria Autoescola",
     area: "Gestão de Projetos",
-    description: "",
-    challenge: "",
-    built: "",
+    description:
+      "Consultoria com reuniões semanais com o cliente, com o objetivo de criar escopo, protótipo de alta e baixa fidelidade e relatórios de viabilidade técnica, funcional e de usabilidade.",
+    challenge:
+      "Meu principal desafio foi coordenar a equipe e garantir uma boa comunicação entre todos.",
+    built:
+      "Gerenciei o levantamento de requisitos para um sistema de autoescolas, definindo escopo e funcionalidades.",
     techs: ["Figma"],
-    demo: "#",
-    github: "#",
+    demo: "https://www.figma.com/proto/RwWi8QOQnBhfY2mocUFEhX/autoescola?node-id=1-2&t=nCZYD87plN0ciCmM-1",
+    github: "",
+    media: {
+      type: "image",
+      src: prototipoAutoescola,
+      alt: "Protótipo Autoescola",
+      caption: "Protótipo de alta fidelidade",
+    },
   },
   {
     name: "Kanban",
@@ -56,6 +80,13 @@ const projects: Project[] = [
     techs: ["Linux", "Redes TCP/IP", "Git", "Shell"],
     demo: "#",
     github: "#",
+    media: {
+      type: "image",
+      src: topologiaRedes,
+      poster: "/assets/hero.png",
+      alt: "Demonstração do projeto",
+      caption: "Topologia",
+    },
   },
 ];
 

@@ -1,4 +1,5 @@
 import type { Project } from "./Project";
+import ProjectMedia from "./ProjectMedia";
 
 const ProjectCard = ({
   project,
@@ -9,14 +10,7 @@ const ProjectCard = ({
 }) => {
   return (
     <article className="project-card">
-      <div className={`project-visual visual-${index % 4}`} aria-hidden="true">
-        <span>{project.area}</span>
-        <div className="visual-screen">
-          <i />
-          <i />
-          <i />
-        </div>
-      </div>
+      <ProjectMedia media={project.media} area={project.area} index={index} />
       <div className="project-content">
         <div>
           <p className="eyebrow">{project.area}</p>

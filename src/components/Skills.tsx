@@ -1,5 +1,5 @@
 const skills = [
-  "React Js",
+  "React JS",
   "React Native",
   "TypeScript",
   "JavaScript",

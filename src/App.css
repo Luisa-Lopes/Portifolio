@@ -3,10 +3,10 @@
   background:
     radial-gradient(
       circle at top left,
-      rgba(45, 212, 191, 0.18),
+      rgba(245, 158, 11, 0.18),
       transparent 32rem
     ),
-    linear-gradient(180deg, #f8fbfb 0%, #eef5f4 46%, #ffffff 100%);
+    linear-gradient(180deg, #fffbeb 0%, #fff7d6 46%, #ffffff 100%);
 }
 
 .topbar {
@@ -20,25 +20,16 @@
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
   padding: 18px 0;
-  background: rgba(248, 251, 251, 0.88);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(18px);
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  color: #12312e;
+  color: #3f2f0b;
   font-weight: 800;
   text-decoration: none;
-}
-
-.brand::before {
-  width: 12px;
-  height: 12px;
-  margin-right: 10px;
-  border-radius: 4px;
-  background: #0f766e;
-  content: "";
 }
 
 .topbar nav {
@@ -55,7 +46,7 @@
 .card-actions a,
 .contact-links a {
   border-radius: 999px;
-  color: #24413d;
+  color: #4a3510;
   font-size: 0.92rem;
   font-weight: 700;
   text-decoration: none;
@@ -75,8 +66,8 @@
 .card-actions a:hover,
 .contact-links a:hover {
   transform: translateY(-1px);
-  background: #d8efec;
-  color: #0f766e;
+  background: #fde68a;
+  color: #b45309;
 }
 
 main {
@@ -96,7 +87,7 @@ main {
 .hero-copy h1 {
   max-width: 800px;
   margin: 14px 0 18px;
-  color: #10201e;
+  color: #2f2208;
   font-size: clamp(2.55rem, 6vw, 5.35rem);
   line-height: 0.98;
   letter-spacing: -0.04em;
@@ -104,13 +95,13 @@ main {
 
 .hero-text {
   max-width: 660px;
-  color: #4d625f;
+  color: #6b5a32;
   font-size: 1.12rem;
 }
 
 .eyebrow {
   margin: 0;
-  color: #0f766e;
+  color: #b45309;
   font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -120,7 +111,6 @@ main {
 .hero-actions,
 .quick-links,
 .card-actions,
-.contact-links,
 .category-row,
 .tags {
   display: flex;
@@ -136,14 +126,14 @@ main {
 .quick-links a,
 .card-actions a,
 .contact-links a {
-  border: 1px solid rgba(15, 118, 110, 0.18);
+  border: 1px solid rgba(217, 119, 6, 0.22);
   padding: 10px 16px;
   background: rgba(255, 255, 255, 0.72);
 }
 
 .hero-actions .primary-action,
 .contact-form button {
-  background: #0f766e;
+  background: #d97706;
   color: #ffffff;
 }
 
@@ -161,10 +151,10 @@ main {
 .project-card,
 .experience-card,
 .contact-form {
-  border: 1px solid rgba(18, 49, 46, 0.1);
+  border: 1px solid rgba(63, 47, 11, 0.1);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 22px 70px rgba(26, 69, 65, 0.1);
+  box-shadow: 0 22px 70px rgba(92, 64, 14, 0.1);
 }
 
 .status-card {
@@ -173,7 +163,7 @@ main {
 
 .status-card span {
   display: block;
-  color: #68817d;
+  color: #7c6a3c;
   font-size: 0.86rem;
   font-weight: 700;
 }
@@ -181,7 +171,7 @@ main {
 .status-card strong {
   display: block;
   margin: 8px 0;
-  color: #12312e;
+  color: #3f2f0b;
   font-size: 2rem;
   line-height: 1.05;
 }
@@ -193,16 +183,16 @@ main {
 }
 
 .signal-card span {
-  border-left: 3px solid #14b8a6;
+  border-left: 3px solid #f59e0b;
   padding: 10px 12px;
-  color: #24413d;
-  background: #edf8f6;
+  color: #4a3510;
+  background: #fff7d6;
   font-weight: 700;
 }
 
 .section {
   padding: 88px 0;
-  border-top: 1px solid rgba(18, 49, 46, 0.1);
+  border-top: 1px solid rgba(63, 47, 11, 0.1);
 }
 
 .two-columns,
@@ -216,7 +206,7 @@ main {
 .section h2 {
   max-width: 780px;
   margin: 10px 0 0;
-  color: #10201e;
+  color: #2f2208;
   font-size: clamp(2rem, 4vw, 3.5rem);
   line-height: 1.02;
   letter-spacing: -0.03em;
@@ -225,7 +215,7 @@ main {
 .section-text {
   display: grid;
   gap: 18px;
-  color: #435b57;
+  color: #66552e;
   font-size: 1.06rem;
 }
 
@@ -242,9 +232,9 @@ main {
 .category-row span,
 .skills-grid span,
 .tags span {
-  border-radius: 999px;
-  background: #dff3f0;
-  color: #0f5d57;
+  border-radius: 10px;
+  background: #fef3c7;
+  color: #92400e;
   font-size: 0.88rem;
   font-weight: 800;
 }
@@ -264,11 +254,43 @@ main {
   overflow: hidden;
 }
 
+.project-media {
+  position: relative;
+  min-height: 210px;
+  margin: 0;
+  background: #3f2f0b;
+}
+
+.project-media img,
+.project-media video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.project-media video {
+  background: #2f2208;
+}
+
+.project-media figcaption {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  max-width: calc(100% - 28px);
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: rgba(47, 34, 8, 0.76);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
 .project-visual {
   display: grid;
   min-height: 210px;
   padding: 22px;
-  background: linear-gradient(135deg, #164e48, #0f766e);
+  background: linear-gradient(135deg, #92400e, #d97706);
   color: #ffffff;
 }
 
@@ -309,15 +331,15 @@ main {
 }
 
 .visual-1 {
-  background: linear-gradient(135deg, #0f766e, #2563eb);
+  background: linear-gradient(135deg, #d97706, #facc15);
 }
 
 .visual-2 {
-  background: linear-gradient(135deg, #155e75, #0f766e);
+  background: linear-gradient(135deg, #a16207, #d97706);
 }
 
 .visual-3 {
-  background: linear-gradient(135deg, #365314, #0f766e);
+  background: linear-gradient(135deg, #854d0e, #d97706);
 }
 
 .project-content,
@@ -330,7 +352,7 @@ main {
 .project-content h3,
 .experience-card h3 {
   margin: 0;
-  color: #10201e;
+  color: #2f2208;
   font-size: 1.45rem;
 }
 
@@ -338,7 +360,7 @@ main {
 .experience-card p,
 .experience-card strong {
   margin: 0;
-  color: #526966;
+  color: #6b5a32;
 }
 
 dl {
@@ -348,13 +370,13 @@ dl {
 }
 
 dt {
-  color: #12312e;
+  color: #3f2f0b;
   font-weight: 800;
 }
 
 dd {
   margin: 4px 0 0;
-  color: #526966;
+  color: #6b5a32;
 }
 
 .tags span {
@@ -369,6 +391,11 @@ dd {
 
 .experience-card strong {
   font-weight: 700;
+}
+
+.experience-description {
+  border-left: 3px solid #f59e0b;
+  padding-left: 12px;
 }
 
 .skills-grid {
@@ -395,7 +422,7 @@ dd {
 .contact-form label {
   display: grid;
   gap: 8px;
-  color: #24413d;
+  color: #4a3510;
   font-weight: 800;
 }
 
@@ -403,11 +430,11 @@ dd {
 .contact-form textarea {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid rgba(18, 49, 46, 0.16);
+  border: 1px solid rgba(63, 47, 11, 0.16);
   border-radius: 8px;
   padding: 12px 14px;
   background: #ffffff;
-  color: #10201e;
+  color: #2f2208;
   font: inherit;
 }
 
