@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 const prototipoAutoescola = new URL("../assets/prototipo.png", import.meta.url)
   .href;
 
-const topologiaRedes = new URL("../assets/topologiaPnet.png", import.meta.url)
+const topologiaRedes = new URL("../assets/topologiaPNet.png", import.meta.url)
   .href;
 
 export type ProjectMedia = {
