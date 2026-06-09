@@ -33,7 +33,7 @@ const ProjectMedia = ({
   }
 
   return (
-    <figure className="project-media">
+    <figure className="project-media ">
       {media.type === "image" ? (
         <img src={media.src} alt={media.alt} loading="lazy" />
       ) : (
