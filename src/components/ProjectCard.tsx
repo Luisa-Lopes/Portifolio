@@ -33,8 +33,8 @@ const ProjectCard = ({
           ))}
         </div>
         <div className="card-actions">
-          <a href={project.github}>GitHub</a>
-          <a href={project.demo}>Demo</a>
+          {project?.github && <a href={project.github}>GitHub</a>}
+          {project?.demo && <a href={project.demo}>Demo</a>}
         </div>
       </div>
     </article>
