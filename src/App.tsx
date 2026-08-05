@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -8,21 +9,26 @@ import Skills from "./components/Skills";
 import NavBar from "./layouts/navBar";
 
 function App() {
+  const [gameStarted, setGameStarted] = useState(false);
+  const [xp, setXp] = useState(0);
+
+  const startGame = () => {
+    setGameStarted(true);
+    setXp((current) => Math.max(current, 100));
+    window.setTimeout(() => {
+      document.querySelector("#sobre")?.scrollIntoView({ behavior: "smooth" });
+    }, 120);
+  };
+
   return (
     <div className="site-shell">
-      <NavBar />
-
+      <NavBar gameStarted={gameStarted} xp={xp} />
       <main>
-        <Home />
-
+        <Home gameStarted={gameStarted} onStart={startGame} />
         <About />
-
-        <Project />
-
+        <Project onExplore={() => setXp((current) => Math.max(current, 350))} />
         <Experience />
-
         <Skills />
-
         <Contact />
       </main>
     </div>

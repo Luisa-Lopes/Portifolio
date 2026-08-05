@@ -111,11 +111,11 @@ const projects: Project[] = [
   },
 ];
 
-const Project = () => {
+const Project = ({ onExplore }: { onExplore: () => void }) => {
   return (
     <section className="section" id="projetos">
       <div className="section-heading">
-        <p className="eyebrow">Projetos</p>
+        <p className="eyebrow">MAPA DE MISSÕES · +250 XP</p>
         <h2>
           Trabalhos que conectam front-end, IoT, redes e aprendizado acadêmico.
         </h2>
@@ -125,7 +125,7 @@ const Project = () => {
           <span key={category}>{category}</span>
         ))}
       </div>
-      <div className="projects-grid">
+      <div className="projects-grid" onClick={onExplore}>
         {projects.map((project, index) => (
           <ProjectCard key={project.name} project={project} index={index} />
         ))}
